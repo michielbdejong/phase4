@@ -270,6 +270,14 @@ To build the whole package on the commandline use `mvn clean install -U`.
 
 If you are importing this into your IDE and you get build errors, it maybe necessary to run `mvn process-sources` once in the `phase4-lib` subproject. Afterwards the folder `target/generated-sources/xjc` must be added to the source build path. When building only on the commandline, this is done automatically.
 
+# Running with Docker
+
+```sh
+docker build -t phase4 .
+docker run --network=host -d phase4
+curl http://localhost:8080/[?]
+```
+
 # Known limitations
 
 Per now the following known limitations exist:
