@@ -12,8 +12,8 @@ COPY --from=build /root/.m2/repository/com/helger/phase4/phase4-peppol-server-we
 
 RUN apt update && apt install -y vim certbot
 
-ADD ./init.sh /root/init.sh
-ADD ./server.xml /usr/local/tomcat/conf/server.xml
+ADD ./docker/init.sh /root/init.sh
+ADD ./docker/server.xml /usr/local/tomcat/conf/server.xml
 
 EXPOSE 8080
 
