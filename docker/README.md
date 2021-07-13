@@ -10,7 +10,7 @@ mv as4.pfx /root/as4Keys/
 touch docker.env
 echo DOMAIN=as4.example.com >> docker.env
 echo EMAIL=letsencrypt@example.com >> docker.env
-echo CONFIG_FILE=/as4Keys/phase4.properties >> docker.env
+echo CONFIG_FILE=/root/phase4.properties >> docker.env
 echo STOREPASS=secret >> docker.env
 echo KEYPASS=secret >> docker.env
 echo KEYNAME=as4 >> docker.env
