@@ -8,7 +8,7 @@ RUN mvn clean install -U -DskipTests
 
 FROM tomcat as runtime
 
-COPY --from=build /root/.m2/repository/com/helger/phase4/phase4-peppol-server-webapp/1.3.2-SNAPSHOT /usr/local/tomcat/webapps/phase4
+COPY --from=build /root/.m2/repository/com/helger/phase4/phase4-peppol-server-webapp/1.3.2-SNAPSHOT /usr/local/tomcat/webapps/as4
 
 RUN apt update && apt install -y vim certbot
 
