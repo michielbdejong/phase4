@@ -20,5 +20,5 @@ cd phase4
 git checkout docker
 docker build -t phase4 -f docker/Dockerfile .
 docker run -d --network="host" --name phase4 --env-file /root/docker.env -v /root/as4Keys:/as4Keys -v /root/tlsKeys:/etc/letsencrypt phase4
-docker exec phase4 sh init.sh
+docker exec phase4 sh /root/init.sh
 docker restart phase4
