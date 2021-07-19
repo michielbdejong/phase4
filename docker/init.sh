@@ -14,3 +14,12 @@ echo org.apache.wss4j.crypto.merlin.keystore.file="/as4Keys/as4.pfx" >> /root/ph
 echo org.apache.wss4j.crypto.merlin.keystore.password="$STOREPASS" >> /root/phase4.properties
 echo org.apache.wss4j.crypto.merlin.keystore.alias="$KEYNAME" >> /root/phase4.properties
 echo org.apache.wss4j.crypto.merlin.keystore.private.password="$KEYPASS" >> /root/phase4.properties
+
+echo org.apache.wss4j.crypto.merlin.keystore.private.password="$KEYPASS" >> /root/phase4.properties
+
+
+# server.proxy.enabled=false
+#server.proxy.address=10.0.0.1
+#server.proxy.port=8080
+
+# phase4.endpoint.address=http://localhost:8080/as4

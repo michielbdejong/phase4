@@ -38,6 +38,6 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>Phase4PeppolServlet</servlet-name>
-    <url-pattern>/as4</url-pattern>
+    <url-pattern>/as4/</url-pattern>
   </servlet-mapping>
 </web-app>
